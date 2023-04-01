@@ -18,13 +18,19 @@
 
 .contato__lista {
     display: flex;
-    flex-wrap: nowrap;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    gap: 0.2rem;
 }
 
 .contato__lista--item {
-    width: 15%;
+    width: 12%;
+}
+
+.contato__lista--item a {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
 }
 
 .contato--github {
@@ -42,7 +48,7 @@
     }
 
     .contato__lista--item {
-        width: 10%;
+        width: 6%;
     }
 }
 
@@ -53,17 +59,17 @@
     }
 
     .contato__lista--item {
-        width: 7.5%;
+        width: 5%;
     }
 }
 
 @media screen and (min-width: 1440px) {
     .contato__lista {
-        width: 63%;
+        width: 55%;
     }
 
     .contato__lista--item {
-        width: 6%;
+        width: 4%;
     }
 }
 
@@ -73,6 +79,10 @@
     }
 
     .contato__lista {
-        width: 48%;
+        width: 40%;
+    }
+
+    .contato__lista--item {
+        width: 7%;
     }
 }
