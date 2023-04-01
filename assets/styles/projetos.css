@@ -1,0 +1,43 @@
+.projetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projetos__titulo {
+    color: var(--cor-texto);
+    font-size: 3.2rem;
+    font-weight: bold;
+    padding: 1.5rem 0;
+    background: linear-gradient(#fff2, #000);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.card__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card__container-link {
+    width: 50%;
+    margin: 0.5rem 0;
+    box-sizing: content-box;
+}
+
+.link__imagem {
+    width: 100%;
+}
+
+.link__outros-projetos {
+    color: var(--cor-blue);
+    border-bottom: 1px solid var(--cor-blue); 
+}
+
+@media screen and (min-width: 1920px) {
+    .projetos__titulo {
+        font-size: 5.2rem;
+    }
+}

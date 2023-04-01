@@ -1,0 +1,66 @@
+.cabecalho {
+    width: 100%;
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    padding: 2.5rem 1.5rem;
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: 20%;
+}
+
+.logo__imagem {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.logo__texto {
+    display: none;
+}
+
+.menu__lista {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .logo {
+        width: 14%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .cabecalho {
+        justify-content: space-around;
+    }
+
+    .logo {
+        width: 9%;
+    }
+
+    .menu__lista {
+        display: flex;
+        gap: 3rem;
+    }
+
+    .menu__lista a {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .logo {
+        width: 6%;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .menu__lista a {
+        font-size: 1.5rem;
+    }
+}

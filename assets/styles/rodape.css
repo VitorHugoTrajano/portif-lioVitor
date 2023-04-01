@@ -1,0 +1,13 @@
+.rodape {
+    border-top: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    font-size: 0.7rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+@media screen and (min-width: 1920px) {
+    .rodape {
+        font-size: 1.2rem;
+    }
+}
