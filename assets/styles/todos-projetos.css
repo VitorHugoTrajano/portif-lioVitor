@@ -1,24 +1,134 @@
-.projetos {
+.todos-projetos {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 3rem;
+    padding-top: 5.5rem;
     padding-bottom: 3rem;
 }
 
-.projetos__titulo {
+.todos-projetos__titulo {
     color: var(--cor-texto);
     font-size: 3.2rem;
     font-weight: bold;
-    padding: 1.5rem 0;
+    padding-bottom: 1.5rem;
     background: linear-gradient(#fff2, #000);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
 }
 
-.projetos__container {
+.todos-projetos__container {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.card__projeto {
+    width: 68%;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    border-radius: 15px;
+    background-color: #222831;
+}
+
+.card__descricao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0.5rem 0.5rem 0.5rem;
+}
+
+.card__imagem {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card__titulo {
+    color: var(--cor-purple);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.card__texto {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin: 1rem 0;
+}
+
+.card__caracteristica {
+    font-size: 0.8rem;
+}
+
+@media screen and (min-width: 768px) {
+    .todos-projetos {
+        padding-top: 7rem;
+    }
+
+    .card__projeto {
+        width: 55%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .todos-projetos {
+        padding-top: 9rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .todos-projetos {
+        padding-top: 11rem;
+    }
+
+    .card__projeto {
+        width: 45%;
+    }
+
+    .card__descricao {
+        padding: 0 1rem 1rem 1rem;
+    }
+
+    .card__titulo {
+        font-size: 1.5rem;
+    }
+
+    .card__texto {
+        font-size: 1.2rem;
+    }
+
+    .card__caracteristica {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 1902px) {
+    .todos-projetos {
+        padding-top: 15rem;
+    }
+
+    .todos-projetos__titulo {
+        font-size: 5.2rem;
+    }
+
+    .card__projeto {
+        width: 50%;
+    }
+
+    .card__descricao {
+        padding: 0 1.2rem 1.2rem 1.2rem;
+    }
+
+    .card__titulo {
+        font-size: 2rem;
+    }
+
+    .card__texto {
+        font-size: 1.5rem;
+    }
+
+    .card__caracteristica {
+        font-size: 1.5rem;
+    }
+
 }

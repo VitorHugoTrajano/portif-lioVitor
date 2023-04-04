@@ -11,7 +11,7 @@
 .logo {
     display: flex;
     align-items: center;
-    width: 20%;
+    width: 15%;
 }
 
 .logo__imagem {
@@ -27,9 +27,27 @@
     display: none;
 }
 
+
+/* Página Todos os Projetos */
+.cabecalho__projetos {
+    display: flex;
+    justify-content:flex-end;
+    padding: 1rem 1.5rem 0 1.5rem;
+}
+
+.cabecalho__projetos--link {
+    width: 25%;
+}
+
 @media screen and (min-width: 768px) {
-    .logo {
-        width: 14%;
+
+    /* Página Todos os Projetos */
+    .cabecalho__projetos {
+        padding-right: 3.5rem;
+    }
+
+    .cabecalho__projetos--link {
+        width: 18%;
     }
 }
 
@@ -51,11 +69,25 @@
         font-size: 1rem;
         font-weight: 400;
     }
+
+    /* Página Todos os Projetos */
+    .cabecalho__projetos {
+        justify-content: flex-end;
+    }
+
+    .cabecalho__projetos--link {
+        width: 18%;
+    }
 }
 
 @media screen and (min-width: 1440px) {
     .logo {
         width: 6%;
+    }
+
+    /* Página Todos os Projetos */
+    .cabecalho__projetos--link {
+        width: 15%;
     }
 }
 
