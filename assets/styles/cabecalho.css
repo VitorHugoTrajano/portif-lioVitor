@@ -1,7 +1,7 @@
 .cabecalho {
     width: 100%;
     display: flex;
-    justify-content:end;
+    justify-content: end;
     align-items: center;
     padding: 2.5rem 1.5rem;
     position: absolute;
@@ -31,7 +31,7 @@
 /* Página Todos os Projetos */
 .cabecalho__projetos {
     display: flex;
-    justify-content:flex-end;
+    justify-content: flex-end;
     padding: 1rem 1.5rem 0 1.5rem;
 }
 
@@ -77,6 +77,12 @@
 
     .cabecalho__projetos--link {
         width: 18%;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .cabecalho__projetos--link {
+        width: 15%;
     }
 }
 
