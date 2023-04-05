@@ -120,6 +120,10 @@
         font-size: 5.2rem;
     }
 
+    .card__projeto {
+        width: 30%;
+    }
+
     .card__descricao {
         padding: 0 1.2rem 1.2rem 1.2rem;
     }
