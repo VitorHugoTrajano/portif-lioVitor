@@ -66,13 +66,20 @@
     }
 
     .card__projeto {
-        width: 55%;
+        width: 40%;
     }
 }
 
 @media screen and (min-width: 1024px) {
     .todos-projetos {
         padding-top: 9rem;
+    }
+
+    .todos-projetos__container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
     }
 }
 
@@ -82,7 +89,7 @@
     }
 
     .card__projeto {
-        width: 45%;
+        width: 35%;
     }
 
     .card__descricao {
@@ -112,7 +119,7 @@
     }
 
     .card__projeto {
-        width: 50%;
+        width: 35%;
     }
 
     .card__descricao {

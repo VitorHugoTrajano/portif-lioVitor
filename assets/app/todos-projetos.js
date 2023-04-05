@@ -10,7 +10,7 @@ var projetos = [
     },
     {
         "url": 'https://barbearia-alura-five-omega.vercel.app',
-        "imagem": 'assets/imagens/projetos-imagens/barbearia-alura.png',
+        "imagem": 'assets/imagens/projetos-imagens/projeto-barbeariaalura.png',
         "titulo": 'Projeto Barbearia Alura',
         "tecnologia": 'HTML e CSS',
         "caracteristica": 'Site responsivo.'
