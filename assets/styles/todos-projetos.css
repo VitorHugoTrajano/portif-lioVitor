@@ -120,10 +120,6 @@
         font-size: 5.2rem;
     }
 
-    .card__projeto {
-        width: 35%;
-    }
-
     .card__descricao {
         padding: 0 1.2rem 1.2rem 1.2rem;
     }
@@ -140,4 +136,10 @@
         font-size: 1.5rem;
     }
 
+}
+
+@media screen and (min-width: 2560px) {
+    .card__projeto {
+        width: 30%;
+    }
 }
