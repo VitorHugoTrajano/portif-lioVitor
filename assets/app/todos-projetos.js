@@ -128,7 +128,7 @@ function carregarProjetos(projetos) {
 
     projetos.forEach(projeto => {
         lista += `<article class="card__projeto">
-                    <a href="${projeto.url}"><img src="${projeto.imagem}" alt="" class="card__imagem"></a>
+                    <a href="${projeto.url}"  target="_blank"><img src="${projeto.imagem}" alt="" class="card__imagem"></a>
                     <div class="card__descricao">
                         <h3 class="card__titulo">${projeto.titulo}</h3>
                         <p class="card__texto">${projeto.tecnologia}</p>
