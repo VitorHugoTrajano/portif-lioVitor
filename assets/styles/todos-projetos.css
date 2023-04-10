@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     padding-top: 5.5rem;
-    padding-bottom: 3rem;
+    padding-bottom: 1.5rem;
 }
 
 .todos-projetos__titulo {
@@ -21,58 +21,95 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    perspective: 7000px;
 }
 
-.card__projeto {
-    width: 68%;
-    box-sizing: border-box;
+.card {
+    width: 16rem;
+    height: 14.5rem;
+    transform-style: preserve-3d;
+    position: relative;
     margin-bottom: 1rem;
     border-radius: 15px;
-    background-color: #222831;
+    box-sizing: border-box;
+    transition: transform 0.4s ease-in-out;
 }
 
-.card__descricao {
+.card__flip {
+    transform: rotateY(-180deg);
+}
+
+.card__frente,
+.card__atras {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 0.5rem 0.5rem 0.5rem;
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background-color: #222831;
+    box-sizing: border-box;
+}
+
+.card__atras {
+    align-items: flex-start;
+    padding: 0.5rem 0.4rem 0.4rem 0.4rem;
+    transform: rotateY(180deg);
 }
 
 .card__imagem {
     width: 100%;
+    height: 80%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+}
+
+.card__maisinfo {
+    align-self: flex-end;
+    color: var(--cor-blue);
+    border-bottom: 1px solid var(--cor-blue);
+    margin-top: 0.5rem;
+    margin-right: 0.3rem;
 }
 
 .card__titulo {
     color: var(--cor-purple);
     font-weight: 700;
     font-size: 1rem;
+    margin-bottom: 0.5rem;
 }
 
-.card__texto {
+.card__descricao {
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-align: justify;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+}
+
+.card__lista {
+    list-style: inside;
+}
+
+.card__lista-item {
     font-size: 0.8rem;
     font-weight: 500;
-    margin: 1rem 0;
+    margin-bottom: 0.5rem;
 }
 
-.card__caracteristica {
-    font-size: 0.8rem;
+.card__link {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--cor-blue);
+    margin-top: 0.5rem;
+    border-bottom: 1px solid var(--cor-blue);
 }
 
 @media screen and (min-width: 768px) {
     .todos-projetos {
         padding-top: 7rem;
-    }
-
-    .card__projeto {
-        width: 40%;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .todos-projetos {
-        padding-top: 9rem;
     }
 
     .todos-projetos__container {
@@ -81,37 +118,68 @@
         justify-content: space-evenly;
         align-items: center;
     }
+
+    .card {
+        width: 18rem;
+        margin-bottom: 1.8rem;
+    }
 }
 
-@media screen and (min-width: 1366px) {
-    .card__projeto {
-        width: 35%;
+@media screen and (min-width: 1024px) {
+    .todos-projetos {
+        padding-top: 9rem;
+    }
+
+    .todos-projetos__titulo {
+        padding-bottom: 3rem;
+    }
+
+    .card {
+        width: 18rem;
+        margin-bottom: 2.2rem;
+    }
+}
+
+@media screen and (min-width: 1365px) {
+    .todos-projetos__container {
+        column-gap: 1.8rem;
+    }
+
+    .card {
+        width: 20rem;
+        height: 17rem;
+    }
+
+    .card__atras {
+        padding: 1rem;
+    }
+
+    .card__titulo {
+        font-size: 1.1rem;
+    }
+
+    .card__descricao, .card__lista-item, .card__link {
+        font-size: 0.9rem;
     }
 }
 
 @media screen and (min-width: 1440px) {
-    .todos-projetos {
-        padding-top: 11rem;
-    }
-
-    .card__descricao {
-        padding: 0 1rem 1rem 1rem;
+    .card {
+        width: 22rem;
+        height: 18rem;
+        margin-bottom: 3.5rem;
     }
 
     .card__titulo {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
-    .card__texto {
-        font-size: 1.2rem;
-    }
-
-    .card__caracteristica {
-        font-size: 1.1rem;
+    .card__descricao, .card__lista-item, .card__link {
+        font-size: 1rem;
     }
 }
 
-@media screen and (min-width: 1902px) {
+@media screen and (min-width: 1919px) {
     .todos-projetos {
         padding-top: 15rem;
     }
@@ -120,24 +188,37 @@
         font-size: 5.2rem;
     }
 
-    .card__projeto {
-        width: 30%;
+    .todos-projetos__container {
+        column-gap: 13.5rem;
     }
 
-    .card__descricao {
-        padding: 0 1.2rem 1.2rem 1.2rem;
+    .card {
+        width: 30rem;
+        height: 24rem;
+        margin-bottom: 5.5rem;
+    }
+
+    .card__maisinfo {
+        font-size: 1.4rem;
+        margin-top: 1rem;
+        margin-right: 0.8rem;
+    }
+
+    .card__atras {
+        padding: 1.5rem;
     }
 
     .card__titulo {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
-    .card__texto {
-        font-size: 1.5rem;
+    .card__descricao, .card__lista-item, .card__link {
+        font-size: 1.3rem;
     }
 
-    .card__caracteristica {
-        font-size: 1.5rem;
+    .card__link {
+        font-size: 1.3rem;
+        margin-top: 0.7rem;
     }
 
 }
