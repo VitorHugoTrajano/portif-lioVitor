@@ -222,9 +222,3 @@
     }
 
 }
-
-@media screen and (min-width: 2560px) {
-    .card__projeto {
-        width: 30%;
-    }
-}
